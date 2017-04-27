@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Astro Weight Calculator</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body onload="onLoadFunction()">
+  <!-- Write your markup here -->
+  <div class="form-horizontal">
+    <!--    <form class="form-horizontal">  -->
+    <fieldset>
+      <!-- Form Name -->
+      <legend>Astro Weight Calculator</legend>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="userWeight">Weight</label>
+        <div class="col-md-4">
+          <input id="userWeight" name="userWeight" type="text" placeholder="Weight" class="form-control input-md">
+          <span class="help-block">Enter your weight in this box!</span>
+        </div>
+      </div>
+
+      <!-- Select Basic -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="planets">Planets</label>
+        <div class="col-md-4">
+          <select id="planets" name="planets" class="form-control">
+        </select>
+        </div>
+      </div>
+
+      <!-- Textarea -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="output">Weight calculation</label>
+        <div class="col-md-4">
+          <p id="output">
+            <!-- <textarea class="form-control" id="output" name="output"></textarea> -->
+          </p>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="singlebutton">Calculate Weight Button</label>
+        <div class="col-md-4">
+          <button id="calculateWeight" name="calculateWeight" class="btn btn-primary">Calculate Weight</button>
+        </div>
+      </div>
+
+    </fieldset>
+    <!-- </form> -->
+  </div>
+
+  <!-- Don't forget to add your <script> tag here -->
+  <script src="main.js" type="text/javascript"></script>
+  <script src="node_modules/jquery/dist/jquery.js" type="text/javascript"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+</body>
+
+</html>
